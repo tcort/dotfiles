@@ -1,0 +1,22 @@
+[user]
+	name = Thomas Cort
+	email = linuxgeek@gmail.com
+[branch]
+	autosetuprebase = always
+[color]
+	ui = auto
+[sendemail]
+	smtpuser = linuxgeek@gmail.com
+	smtpserver = smtp.gmail.com
+	smtpserverport = 587
+	smtpencryption = tls
+[alias]
+	br = branch
+	ci = commit
+	cl = clone
+	co = checkout
+	rb = rebase
+[push]
+	default = simple
+[diff]
+	algorithm = patience

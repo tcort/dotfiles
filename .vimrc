@@ -37,6 +37,9 @@ set laststatus=2
 " Always show absolute line numbers
 set number
 
+" Always show position of the cursor.
+set ruler
+
 " Favourite colour scheme in default install.
 set t_Co=256
 syntax on

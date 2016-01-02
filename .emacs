@@ -35,6 +35,17 @@
 ;; without the startup message
 (setq inhibit-startup-message t)
 
+;; split the screen horizontally, give the bottom part 25% height,
+;; start eshell in the bottom, and switch windows.
+(defun eshell-window ()
+  (interactive)
+  (split-window-below (floor (* 0.75 (window-height))))
+  (next-multiframe-window)
+  (eshell)
+  (next-multiframe-window))
+
+(eshell-window)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;; Backups!

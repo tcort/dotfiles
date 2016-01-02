@@ -95,6 +95,10 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
 
+;; This function is from Stack Overflow:
+;; http://stackoverflow.com/questions/10092322/how-to-automatically-install-emacs-packages-by-specifying-a-list-of-package-name/10095853#10095853
+;; and was post by RNA http://stackoverflow.com/users/489564/rna
+;; SO content is licensed under CC-BY-SA 3.0 with attribution required http://blog.stackoverflow.com/2009/06/attribution-required/
 (defun ensure-package-installed (&rest packages)
   "Assure every package is installed, ask for installation if it’s not.
 

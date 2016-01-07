@@ -35,6 +35,17 @@
 ;; without the startup message
 (setq inhibit-startup-message t)
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; Behavioural Changes
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; make page up / page down move the cursor all
+;; the way to the top or the bottom of the buffer
+(setq scroll-error-top-bottom t)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;; Backups!
@@ -144,3 +155,4 @@ Return a list of installed packages or nil for every skipped package."
 ;;
 (eval-after-load 'tern
   '(progn (tern-ac-setup) (auto-complete-mode)))
+

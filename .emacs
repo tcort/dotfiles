@@ -50,6 +50,9 @@
 ;; use M-x untabify to do tabs2spaces
 (setq-default indent-tabs-mode nil)
 (setq tab-width 4)
+(setq js-indent-level 4)
+(setq js2-indent-level 4)
+(setq javascript-indent-level 4)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;

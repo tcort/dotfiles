@@ -46,6 +46,11 @@
 ;; the way to the top or the bottom of the buffer
 (setq scroll-error-top-bottom t)
 
+;; No tabs! Use C-q <tab> if you need a tab
+;; use M-x untabify to do tabs2spaces
+(setq-default indent-tabs-mode nil)
+(setq tab-width 4)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;; Backups!

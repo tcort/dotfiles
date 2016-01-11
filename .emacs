@@ -49,9 +49,17 @@
 ;; Remap C-s to do increamental RegExp search
 (global-set-key "\C-s" 'isearch-forward-regexp)
 
+(defun previous-other-window ()
+  (interactive)
+  (other-window -1))
+
+;; Better window switching
+(global-set-key (kbd "s-<right>") 'other-window)
+(global-set-key (kbd "s-<left>") 'previous-other-window)
+
 ;; Better buffer switching
-(global-set-key (kbd "s-<right>") 'next-buffer)
-(global-set-key (kbd "s-<left>") 'previous-buffer)
+(global-set-key (kbd "s-<up>") 'next-buffer)
+(global-set-key (kbd "s-<down>") 'previous-buffer)
 
 ;; No tabs! Use C-q <tab> if you need a tab
 ;; use M-x untabify to do tabs2spaces

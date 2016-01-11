@@ -46,6 +46,13 @@
 ;; the way to the top or the bottom of the buffer
 (setq scroll-error-top-bottom t)
 
+;; Remap C-s to do increamental RegExp search
+(global-set-key "\C-s" 'isearch-forward-regexp)
+
+;; Better buffer switching
+(global-set-key (kbd "s-<right>") 'next-buffer)
+(global-set-key (kbd "s-<left>") 'previous-buffer)
+
 ;; No tabs! Use C-q <tab> if you need a tab
 ;; use M-x untabify to do tabs2spaces
 (setq-default indent-tabs-mode nil)

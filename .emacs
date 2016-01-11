@@ -149,7 +149,8 @@ Return a list of installed packages or nil for every skipped package."
 			  'markdown-mode
 			  'powerline
 			  'tern
-			  'tern-auto-complete)
+			  'tern-auto-complete
+			  'web-mode)
 
 ;;
 ;; distinguished-theme
@@ -179,3 +180,7 @@ Return a list of installed packages or nil for every skipped package."
 (eval-after-load 'tern
   '(progn (tern-ac-setup) (auto-complete-mode)))
 
+;;
+;; web-mode
+;;
+(add-to-list 'auto-mode-alist '("\\.html$" . web-mode))

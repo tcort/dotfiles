@@ -49,6 +49,7 @@
 ;; Remap C-s to do increamental RegExp search
 (global-set-key "\C-s" 'isearch-forward-regexp)
 
+;; facade for (other-window -1)
 (defun previous-other-window ()
   (interactive)
   (other-window -1))
@@ -68,6 +69,14 @@
 (setq js-indent-level 4)
 (setq js2-indent-level 4)
 (setq javascript-indent-level 4)
+
+;; on save, remove trailing whitespace and blank lines at the beginning/end of file
+(add-hook 'before-save-hook 'whitespace-cleanup)
+
+;; Force all automatic splits to be vertical splits
+;; like when entering markdown-live-preview-mode
+(setq split-height-threshold nil)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;

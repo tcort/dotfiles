@@ -64,11 +64,15 @@
 
 ;; No tabs! Use C-q <tab> if you need a tab
 ;; use M-x untabify to do tabs2spaces
-(setq-default indent-tabs-mode nil)
+(setq indent-tabs-mode nil)
 (setq tab-width 4)
+(setq c-default-style "linux")
+(setq c-basic-offset 4)
 (setq js-indent-level 4)
 (setq js2-indent-level 4)
 (setq javascript-indent-level 4)
+(setq php-indent-level 4)
+(setq php-mode-force-pear t)
 
 ;; on save, remove trailing whitespace and blank lines at the beginning/end of file
 (add-hook 'before-save-hook 'whitespace-cleanup)
@@ -99,6 +103,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; use ssh by default (quicker than scp)
+;; M-x f /user@host:/path/to/file
 (setq tramp-default-method "ssh")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -138,10 +143,10 @@ Return a list of installed packages or nil for every skipped package."
   (mapcar
    (lambda (package)
      (if (package-installed-p package)
-         nil
+	 nil
        (if (y-or-n-p (format "Package %s is missing. Install it? " package))
-           (package-install package)
-         package)))
+	   (package-install package)
+	 package)))
    packages))
 
 ;; Make sure to have downloaded archive description.
@@ -156,6 +161,7 @@ Return a list of installed packages or nil for every skipped package."
 			  'flycheck
 			  'magit
 			  'markdown-mode
+			  'php-mode
 			  'powerline
 			  'tern
 			  'tern-auto-complete

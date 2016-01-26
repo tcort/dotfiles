@@ -120,6 +120,10 @@
 (dolist (hook '(c-mode-hook c++-mode-hook js-mode-hook))
   (add-hook hook (lambda () (flyspell-prog-mode))))
 
+;; English Please!
+(dolist (hook '(text-mode-hook c-mode-hook c++-mode-hook js-mode-hook))
+  (add-hook hook (lambda () (ispell-change-dictionary "english"))))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;; Packages!

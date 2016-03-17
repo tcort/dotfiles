@@ -77,6 +77,11 @@
 ;; on save, remove trailing whitespace and blank lines at the beginning/end of file
 (add-hook 'before-save-hook 'whitespace-cleanup)
 
+(add-hook 'write-file-hooks
+          (lambda ()
+	    (untabify (point-min) (point-max))
+            nil))
+
 ;; Force all automatic splits to be vertical splits
 ;; like when entering markdown-live-preview-mode
 (setq split-height-threshold nil)
@@ -147,10 +152,10 @@ Return a list of installed packages or nil for every skipped package."
   (mapcar
    (lambda (package)
      (if (package-installed-p package)
-	 nil
+         nil
        (if (y-or-n-p (format "Package %s is missing. Install it? " package))
-	   (package-install package)
-	 package)))
+           (package-install package)
+         package)))
    packages))
 
 ;; Make sure to have downloaded archive description.
@@ -162,14 +167,14 @@ Return a list of installed packages or nil for every skipped package."
 
 ;; instruct emacs to download an execute arbitrary programs from the internet on startup.
 (ensure-package-installed 'distinguished-theme
-			  'flycheck
-			  'magit
-			  'markdown-mode
-			  'php-mode
-			  'powerline
-			  'tern
-			  'tern-auto-complete
-			  'web-mode)
+                          'flycheck
+                          'magit
+                          'markdown-mode
+                          'php-mode
+                          'powerline
+                          'tern
+                          'tern-auto-complete
+                          'web-mode)
 
 ;;
 ;; distinguished-theme
@@ -203,3 +208,4 @@ Return a list of installed packages or nil for every skipped package."
 ;; web-mode
 ;;
 (add-to-list 'auto-mode-alist '("\\.html$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.hbs$" . web-mode))

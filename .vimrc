@@ -79,12 +79,12 @@ set ignorecase smartcase
 set incsearch
 set nohlsearch
 
-" JavaScript Completion and Indenting (2 spaces per indent, no tabs).
-autocmd FileType javascript set softtabstop=4
-autocmd FileType javascript set shiftwidth=4
-autocmd FileType javascript set tabstop=4
-autocmd FileType javascript set expandtab
-autocmd FileType javascript set smarttab
+" JavaScript and Haskell Indenting (4 spaces per indent, no tabs).
+autocmd FileType javascript,haskell set tabstop=8
+autocmd FileType javascript,haskell set expandtab
+autocmd FileType javascript,haskell set softtabstop=4
+autocmd FileType javascript,haskell set shiftwidth=4
+autocmd FileType javascript,haskell set shiftround
 
 " Enable spell checking
 autocmd BufNewFile,BufRead,BufEnter *.txt,*.md set spell spelllang=en

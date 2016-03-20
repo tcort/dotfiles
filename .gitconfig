@@ -16,7 +16,9 @@
 	cl = clone
 	co = checkout
 	rb = rebase
-[push]
-	default = simple
 [diff]
 	algorithm = patience
+[core]
+	editor = vi
+[push]
+	default = simple

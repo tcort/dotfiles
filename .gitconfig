@@ -22,3 +22,5 @@
 	editor = vi
 [push]
 	default = simple
+[commit]
+	template = ~/.gitmessage

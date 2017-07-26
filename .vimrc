@@ -1,6 +1,6 @@
 " VIM Start-up File
 " Thomas Cort <linuxgeek@gmail.com>
-" Last Modified: July 17, 2014
+" Last Modified: July 26, 2017
 
 " Only supported version of vim are versions I've tested with.
 if v:version < 800

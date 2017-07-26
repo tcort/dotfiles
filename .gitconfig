@@ -19,6 +19,6 @@
 [diff]
 	algorithm = patience
 [core]
-	editor = vi
+	editor = vim
 [push]
 	default = simple

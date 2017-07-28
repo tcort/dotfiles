@@ -1,12 +1,6 @@
 " VIM Start-up File
 " Thomas Cort <linuxgeek@gmail.com>
-" Last Modified: July 26, 2017
-
-" Only supported version of vim are versions I've tested with.
-if v:version < 800
-	echoerr 'This .vimrc requires vim 8 or later.'
-	quit
-endif
+" Last Modified: July 28, 2017
 
 " Better backspace.
 set backspace=indent,eol,start

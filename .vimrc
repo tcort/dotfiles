@@ -20,9 +20,6 @@ set wildignore=*.o
 " Always show the status line.
 set laststatus=2
 
-" Always show absolute line numbers
-set number
-
 " Always show position of the cursor.
 set ruler
 

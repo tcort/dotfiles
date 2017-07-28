@@ -40,6 +40,7 @@ set noerrorbells
 " Improve searching
 set ignorecase smartcase
 set incsearch
+set nohlsearch
 
 " JavaScript Indenting (4 spaces per indent, no tabs).
 autocmd FileType javascript set tabstop=4

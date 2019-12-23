@@ -1,6 +1,6 @@
 " VIM Start-up File
 " Thomas Cort <linuxgeek@gmail.com>
-" Last Modified: July 28, 2017
+" Last Modified: December 23, 2019
 
 " Better backspace.
 set backspace=indent,eol,start
@@ -34,6 +34,20 @@ set incsearch
 set nohlsearch
 
 " JavaScript Indenting (4 spaces per indent, no tabs).
+autocmd FileType javascript set tabstop=4
+autocmd FileType javascript set expandtab
+autocmd FileType javascript set softtabstop=4
+autocmd FileType javascript set shiftwidth=4
+autocmd FileType javascript set shiftround
+
+" JSON Indenting (4 spaces per indent, no tabs).
+autocmd FileType json set tabstop=4
+autocmd FileType json set expandtab
+autocmd FileType json set softtabstop=4
+autocmd FileType json set shiftwidth=4
+autocmd FileType json set shiftround
+
+" HTML Indenting (2 spaces per indent, no tabs).
 autocmd FileType javascript set tabstop=4
 autocmd FileType javascript set expandtab
 autocmd FileType javascript set softtabstop=4

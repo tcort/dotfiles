@@ -1,6 +1,6 @@
 " VIM Start-up File
 " Thomas Cort <linuxgeek@gmail.com>
-" Last Modified: December 23, 2019
+" Last Modified: December 30, 2019
 
 " Better backspace.
 set backspace=indent,eol,start
@@ -55,7 +55,7 @@ autocmd FileType javascript set shiftwidth=4
 autocmd FileType javascript set shiftround
 
 " Enable spell checking
-autocmd BufNewFile,BufRead,BufEnter *.txt,*.md set spell spelllang=en
+autocmd BufNewFile,BufRead,BufEnter *.txt,*.md set spell spelllang=en colorcolumn=80 tabstop=4 expandtab softtabstop=4 shiftwidth=4 shiftround
 
 " Add a line at column 80 for C files to remind me to stay inside the lines ;)
 autocmd BufNewFile,BufRead,BufEnter *.c,*.h set colorcolumn=80

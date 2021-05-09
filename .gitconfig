@@ -22,3 +22,5 @@
 	editor = vim
 [push]
 	default = simple
+[commit]
+	template = /Users/thomasc/.git-commit-template

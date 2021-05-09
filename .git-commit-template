@@ -1,0 +1,54 @@
+# <type>(<scope>): <description>
+
+# |<----------- up to 50 characters ----------->|
+#
+#   <type> can be one of: build, chore, ci, docs, feat, fix, perf,
+#                         refactor, revert, style, test
+#
+#   (<scope>) is an optional free form name and enclosed in parentheses
+#
+#   ! before the colon is optional and used to draw attention
+#
+#   <description> is free form, do not end with a period
+#                 use the imperative, present tense
+#
+# examples:
+#
+#   docs: fix spelling of applesauce
+#   test(http): add tests for PATCH method
+#   refactor!: drop support for node 4
+#
+#
+# |<-------- multiple lines up to 72 characters per line ------------->|
+#
+# Explain what changed and why (not how).
+#   If this commit is applied, it will...
+#   Why was this change necessary?
+#   How does it meet the business/task requirements?
+#   Any areas where it falls short or goes further?
+#   Are there any side effects?
+#
+# Sanity checks:
+#  Does the test suite pass?
+#  Does the linter pass?
+#  Is manual testing needed? Was it performed?
+#  Was this change documented in all places where it needs to be?
+#
+# Potential Fallout:
+#  Does release need to be coordinated with another release?
+#  Is this a breaking change? if so, how to manage fallout.
+#  Anything special for needed to deploy this change (e.g. schema update)?
+#
+# References... tasks, commits, urls, etc
+#
+# trailers
+#
+# BREAKING-CHANGE:
+# Acked-by:
+# Co-authored-by:
+# Reported-by:
+# Reviewed-by:
+# Signed-off-by:
+# Suggested-by:
+# Tested-by:
+# Thanks:

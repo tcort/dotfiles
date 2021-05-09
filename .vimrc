@@ -1,6 +1,6 @@
 " VIM Start-up File
 " Thomas Cort <linuxgeek@gmail.com>
-" Last Modified: May 21, 2020
+" Last Modified: May 9, 2021
 
 " Better backspace.
 set backspace=indent,eol,start
@@ -40,15 +40,8 @@ autocmd FileType javascript set softtabstop=4
 autocmd FileType javascript set shiftwidth=4
 autocmd FileType javascript set shiftround
 
-" conf/defaults/json/hbs/html/css Indenting (4 spaces per indent, no tabs).
-autocmd BufNewFile,BufRead,BufEnter *.ejs,*.css,*.conf,*.defaults,*.hbs,*.json,*.html set tabstop=4 expandtab softtabstop=4 shiftwidth=4 shiftround
-
-" HTML Indenting (2 spaces per indent, no tabs).
-autocmd FileType javascript set tabstop=4
-autocmd FileType javascript set expandtab
-autocmd FileType javascript set softtabstop=4
-autocmd FileType javascript set shiftwidth=4
-autocmd FileType javascript set shiftround
+" Indenting (4 spaces per indent, no tabs).
+autocmd BufNewFile,BufRead,BufEnter *.js,*.sql,*.tct,*.autzy,*.rs,*.ejs,*.css,*.conf,*.defaults,*.hbs,*.json,*.html,*.pas,*.xsd,*.xml,*.xslt,*.asm set tabstop=4 expandtab softtabstop=4 shiftwidth=4 shiftround
 
 " Enable spell checking
 autocmd BufNewFile,BufRead,BufEnter *.txt,*.md set spell spelllang=en colorcolumn=80 tabstop=4 expandtab softtabstop=4 shiftwidth=4 shiftround

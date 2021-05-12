@@ -18,9 +18,12 @@
 #   test(http): add tests for PATCH method
 #   refactor!: drop support for node 4
 #
+# leave next line blank to separate subject from body
+
+#
 #
 # |<-------- multiple lines up to 72 characters per line ------------->|
-#
+
 # Explain what changed and why (not how).
 #   If this commit is applied, it will...
 #   Why was this change necessary?

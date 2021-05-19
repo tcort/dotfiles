@@ -1,13 +1,14 @@
 [user]
 	name = Thomas Cort
-	email = linuxgeek@gmail.com
+	email = tcort@tcort.dev
+	signingkey = A34A349754F5891BF20592F2EC3ED37CC83D9AD4
 [branch]
 	autosetuprebase = always
 [color]
 	ui = auto
 [sendemail]
-	smtpuser = linuxgeek@gmail.com
-	smtpserver = smtp.gmail.com
+	smtpuser = tcort@tcort.dev
+	smtpserver = mail.tcort.dev
 	smtpserverport = 587
 	smtpencryption = tls
 [alias]
@@ -24,3 +25,6 @@
 	default = simple
 [commit]
 	template = /home/tcort/.git-commit-template
+	gpgsign = true
+[gpg]
+	program = gpg
